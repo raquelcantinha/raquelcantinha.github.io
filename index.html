@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="=width=device-width" initial-scale=1.0>
+    <link href="style.css" rel="stylesheet"/>
+    <title>Portfolio | Raquel Cantinha</title>
+  </head>
+  <body>
+    <header>
+      <h1>Raquel Cantinha</h1>
+      <svg height="4" width="100%">
+        <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#333333;stroke-width:7" />
+      </svg>
+    </header>
+    <nav id="navegacao">
+        <a class="link" href="index.html">home</a>
+        <a class="link" href="curriculum.html">curriculum</a>
+        <a class="link" href="contact.html">contact</a>
+    </nav>
+    <section class="sobre">
+      <p>Hi! I'm a beginning Front-End Dev. </p>
+      <p>Here you can see some of my work.</p>
+      <p>Due to a professional journey full of multidisciplinary experiences in Arts, Architecture, and teaching, 
+        I was in contact with different people and fields of knowledge. That’s why I learned how important design 
+        thinking, empathy and user needs are for developing every kind of product - and that sense led me to start 
+        my journey in UI Design and Front-End Development.</p>
+    </section>
+    <!--Fim da parte comum a todas as páginas-->
+    <main>
+      <button onclick="openProjectInfo(p1)">+ currency converter</button>
+      <section id="p1" class="guardar__conteudo">
+        <picture>
+          <source srcset="telas-03-mobile.png" media="(max-width: 768px)">
+          <img src="telas-03.png" alt="Desktop and mobile screens showing currency converter layout. On desktop screen, the texts are
+          on left side and the converter on the right side. On mobile screen, the texts como first, on the top, and the converter comes after.">
+        </picture>
+        <div class="context">
+          <h3>Context</h3>
+          <p>This project was created during the Senac EAD course on programming logic. The main goal was to develop a tool that allows the calculation 
+            of a grade point average and uses it as a basis to generate the academic status.</p>
+        </div>
+        <div class="goals">
+          <h3>Goals</h3>
+          <ul>
+            <li>&#9745; to transform the price of a product in dollars to a price in reais</li>
+            <li>&#9745; to create an intuitive and visually attractive interface for users</li>
+            <li>&#9745; adding other currencies for conversion</li>
+          </ul>
+        </div>
+        <div class="techsandtools">
+          <h3>Techs and Tools</h3>
+          <p>HTML <small>[HTML structure, titles hierarchy, form, labels, inputs, external script]</small></p> 
+          <p>CSS <small>[root elements, class, id, links, grid display, grid elements, elements and attributes 
+            properties, media query and responsive design]</small></p>
+          <p>JavaScript <small>[functions, declare variables, get values, parseFloat, get elements by Id, innerHTML, conditional statements]</small></p>
+        </div>
+        <div class="alittlemore">
+          <h3>A little more about it</h3>
+          <p>In this exercise I started to learn how to work with user interaction, taking the result to be typed 
+            in an input, assigning it to a variable, and developing, in a logical way, an algorithm that would 
+            convert this value.</p>
+          <p>Then I learned how to display results on the screen, using "innerHTML".</p>
+          <p>A challenge for me was adding other currencies to the conversion. I first repeated the function for 
+            each currency, but realized that the code was too long, and thought that maybe there was a way to 
+            reduce it without affecting its functionality. To do this, I added arguments to the function.</p>
+          <p>Another challenge was to create the button that would erase the data from the input and return the 
+            initial text written in the field where the converted value is displayed. To do this, I worked with 
+            "reset" on the input, and "textContent" of the displayed value.</p>
+          <p>When sharing the project, I received a suggestion to make the button of the currency chosen for 
+            conversion active when clicked. This challenge I have not been able to develop yet, but it is a next 
+            step that I intend to take in this project.</p>
+          <p>I thought the layout design as a very simple screen. At first I designed everything (the texts and the converter) 
+            together, inside the same visual element, but later I realized that it would make more sense if the converter was the 
+            main element, separated from the auxiliar texts. The colors were chosen as a reference to the banknotes and the coins colors.</p>
+        </div>
+        <div class="link__project">
+          <a href="https://github.com/raquelcantinha/currencyconverter" target="_blank">[click here to see this project on Github]</a>
+          <a href="https://codepen.io/rcantinha/pen/wvjgybr" target="_blank">[click here to see this project on CodePen]</a>
+        </div>
+      </section>
+      <button onclick="openProjectInfo(p2)">+ grade point average calculator</button>
+      <section id="p2" class="guardar__conteudo">
+        <picture>
+          <source srcset="telas-04-mobile.png" media="(max-width: 768px)">
+          <img src="telas-04.png" alt="Desktop and mobile screens showing school average calculator layout. On desktop screen, there is a 
+          greeting text on the left and an orientation text on the right, the calculator is between them, at the center of the page.
+          On mobile screen, the three elements are arranged in sequence, one below the other, in this order: greeting text, calculator, 
+          orientation text.">
+        </picture>
+        <div class="context">
+          <h3>Context</h3>
+          <p>This project was created during the Senac EAD course on programming logic, with the objective of putting 
+          into practice the comprehension of logic and arithmetic problems, the development of algorithms structured 
+          in programming logic, and also applying my knowledge about html and css.</p>
+        </div>
+        <div class="goals">
+          <h3>Goals</h3>
+          <ul>
+            <li>&#9745; to develop a tool that allows the calculation of a grade point average and uses it as a basis to generate the 
+              academic status</li>
+            <li>&#9745; to create an intuitive and visually attractive interface for users (teenagers)</li>
+          </ul>
+        </div>
+        <div class="techsandtools">
+          <h3>Techs and Tools</h3>
+          <p>HTML <small>[HTML structure, section, div, class, input, ul, text hierarchy, external script]</small></p> 
+          <p>CSS <small>[grid display, grid elements, flex display, flex elements, text hierarchy, classes, id, elements and attributes properties, 
+            media query and responsive design]</small></p>
+          <p>JavaScript <small>[functions, declare variables, get values, parseFloat, get elements by Id, innerHTML, conditional statements].</small></p>
+        </div>
+        <div class="alittlemore">
+            <h3>A little more about it</h3>
+            <p>This was my first exercise working with JavaScript. I started it during "Programming Logic" classes. At first 
+            the ideia was to develop an algorithm that could sum grades values that a student obtained during four quarters,
+            and then, calculate the grade point average, dividing the sum by four.</p>
+            <p>I worked with user interaction to get the value typed on each input, and then, through "parseFloat", 
+              interpret each value as a number. Then, through a "function", sum these values and divide them, getting the grade point average.</p>
+            <p>The next step was to define if the student was approved or not. Here I worked with "conditional statements" for the first 
+              time. The minimum grade point average for being approved is 7, if the function result is equal or higher than 
+              this, than the student is approved, else, he/she isn't.</p>
+            <p>To work with JavaScript was a challenge, and so was the layout design. Wanting to present the functionalities
+               and the text parts in an organized nad intuitive way, to make the user interaction with the webpage easier as
+              possible, I decided to divide the screen in three parts, highlighting the middle part, where I placed the
+              calculator, considering that this is the main part of the webpage.</p>
+            <p>I decided to work with a colorful background based on target audience's profile (teenagers that would be school's students) 
+              and also to take out the "weight" that a grade calculation can generate, in addition to presenting a school application in a 
+              more user-friendly way. So, even if you are not approved, it could send you the message "don't worry, we are going to help you 
+              to go through it".</p>
+          </div>
+        <div class="link__project">
+          <a href="https://github.com/raquelcantinha/gradepointaveragecalculator" target="_blank">[click here to see this project on Github]</a>
+          <a href="https://codepen.io/rcantinha/pen/vYjxRRx" target="_blank">[click here to see this project on CodePen]</a>
+        </div>
+      </section>
+      <a href="https://rcantinha.myportfolio.com/" id="graphic__design__projects" target="_blank">+ graphic design projects</a>
+    </main>
+    <button id="back__top" onclick="back__top()">Return to the top of the page</button>
+    <script src="home.js"></script>
+    <script src="backtop.js"></script>
+  </body>
+</html>

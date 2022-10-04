@@ -1,0 +1,252 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* css geral */
+
+:root {
+    --cinza: #333333;
+    --destaque: #D12D00;
+    --h: Arial, sans-serif; 
+    --p: Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: [col1-start] 40vw [col1-end col2-start] 50vw [col2-end];
+    grid-template-rows: auto;
+    column-gap: 5rem;
+    margin-top: 4rem;
+    font-family: var(--p);
+}
+
+header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--h);
+    font-weight: 700;
+    text-transform: lowercase;
+    color: var(--cinza);
+}
+
+h1 {
+    text-align: end;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+#linha {
+    left: 0;
+}
+
+nav {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: lowercase;
+	text-decoration: none;
+    color: var(--cinza);
+    border-bottom: 2px solid var(--cinza);
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--destaque);
+}
+
+.sobre {
+    width: 290px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: end;
+    padding-top: 2rem;
+}
+
+p, li {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--cinza);
+    padding-bottom: 0.5rem;
+}
+
+main {
+    width: 90%;
+    padding: 2rem 0 0 0;
+}
+
+.guardar__conteudo {
+    display: none;
+}
+
+/* fim css geral */
+
+/* info projetos */
+
+img {
+    padding-bottom: 1rem;
+}
+
+.context, .goals, .techsandtools {
+    display: inline-flex;
+    flex-direction: column;
+    width: 30%;
+    padding-right: 1rem;
+}
+
+.alittlemore {
+    padding: 1rem 0 1rem 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.link__project {
+    padding-bottom: 2rem;
+}
+
+.link__project a {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cinza);
+    padding: 1%;
+}
+
+.link__project a:hover {
+    color: var(--destaque);
+}
+
+/* fim info projetos */
+
+/* curriculum */
+button, #graphic__design__projects {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--cinza);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: lowercase;
+    padding-bottom: 2rem;
+}
+
+.btn__curriculum {
+    padding-bottom: 1rem;
+}
+
+#academicEducationText, #extraCurricularText, #professionalExperienceText, #technicalSkillsText, #languagesText {
+    padding-bottom: 2rem;
+}
+
+#technicalSkillsText p, #languagesText p{
+    display: inline;
+    line-height: 250%;
+}
+
+/* fim curriculum */
+
+/* contacts */
+.contact a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--destaque);
+    padding-right: 1rem;
+}
+
+.contact a:hover {
+    color: rgb(209, 45, 0, 0.5);
+}
+/* end contacts */
+
+#back__top {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+    }
+
+    h1 {
+        text-align: start;
+        padding: 0 5% 2% 5%;
+    }
+
+    nav {
+        width: 100%;
+        background: #fff;
+        padding: 2% 5% 5% 5%;
+    }
+
+    .sobre {
+        width: 100%;
+        padding: 1rem 5% 0 5%;
+    }
+
+    main {
+        width: fit-content;
+        padding: 5%;
+    }
+
+    .context, .goals, .techsandtools {
+        display: block;
+        width: fit-content;
+    }
+
+    .link__project a, .contact a  {
+        display: block;
+        text-align: left;
+        padding-bottom: 2%;
+    }
+
+    #back__top {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        width: fit-content;
+        align-self: center;
+        background-color: #fff;
+        border: 2px solid var(--cinza);
+        padding: 1%;
+        margin-bottom: 1rem;
+    }
+}
