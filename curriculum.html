@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="=width=device-width" initial-scale=1.0>
+    <link href="style.css" rel="stylesheet">
+    <title>Portfolio | Raquel Cantinha</title>
+  </head>
+  <body>
+    <header>
+      <h1>Raquel Cantinha</h1>
+      <svg height="4" width="100%">
+        <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#333333;stroke-width:7" />
+      </svg>
+    </header>
+    <nav id="navegacao">
+      <a class="lnk" href="index.html">home</a>
+      <a class="lnk" href="curriculum.html">curriculum</a>
+      <a class="lnk" href="contact.html">contact</a>
+    </nav>
+    <section class="sobre">
+      <p>Hi! I'm a beginning Front-End Dev. </p>
+      <p>Here you can see some of my work.</p>
+      <p>Due to a professional journey full of multidisciplinary experiences in Arts, Architecture, and teaching, 
+        I was in contact with different people and fields of knowledge. That’s why I learned how important design 
+        thinking, empathy and user needs are for developing every kind of product - and that sense led me to start 
+        my journey in UI Design and Front-End Development.</p>
+    </section>  
+    <!--Fim da parte comum a todas as páginas-->
+    <main>
+      <button class="btn__curriculum" onclick="openProjectInfo(academicEducationText)">Academic education</button>
+      <div id="academicEducationText" class="guardar__conteudo">
+        <h3>Specialized in Cultural Management: Culture, Development and Market</h3>
+        <p>Senac University Center | 2017 - 2018</p>
+        <h3>Bachelor of Architecture and Urbanism</h3>
+        <p>Federal University of Pernambuco | 2008 - 2015</p>
+      </div>
+      <button class="btn__curriculum" onclick="openProjectInfo(extraCurricularText)">Extracurricular courses</button>
+      <div id="extraCurricularText" class="guardar__conteudo">
+        <h3>HTML e CSS</h3>
+        <p>Alura | 66h | In progress</p>
+        <h3>Programming Logic</h3>
+        <p>Senac EAD | 60h | 2022</p>
+        <h3>UI Design Patterns: usability in mobile interfaces</h3>
+        <p>Alura | 5h | 2022</p><h3>UX Design</h3>
+        <p>Alura | 80h | 2021 - 2022</p>
+        <h3>Graphic Design</h3>
+        <p>Alura | 150h | 2021 - 2022</p>
+      </div>
+      <button class="btn__curriculum" onclick="openProjectInfo(professionalExperienceText)">Professional experience</button>
+      <div id="professionalExperienceText" class="guardar__conteudo">
+        <h3>Freelancer</h3>
+        <p>2021 - Currently
+        <br>Development of graphic projects for visual identity and logos.</p>
+        <h3>Docent</h3>
+        <p>2017 - 2021
+        <br>Department of Education of Pernambuco
+        <br>Marketing and Advertising teacher (for 6 months). Classes: Aesthetics and History of Art; 
+          Fundamentals of Advertising; Entrepreneurship and Innovation. <br> 
+          Interior design teacher (for 3 years). Classes: Artistic and Observation Drawing; Ergonomics; 
+          Computing; Furniture Design; Expression and Representation Techniques; Technical Drawing and Perspective; 
+          Professional Ethics and Entrepreneurship; Architectural design.</p>
+      </div>
+      <button class="btn__curriculum" onclick="openProjectInfo(technicalSkillsText)">Technical skills</button>
+      <div id="technicalSkillsText" class="guardar__conteudo">
+        <p>HTML 5</p>
+        <p>&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9723;&#9723;&#9723;&#9723;</p><br>
+        <p>CSS 3</p>
+        <p>&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9723;&#9723;&#9723;&#9723;</p><br>
+        <p>JavaScript</p>
+        <p>&#9724;&#9724;&#9723;&#9723;&#9723;&#9723;&#9723;&#9723;&#9723;&#9723;</p></progress><br>
+        <p>Adobe XD</p>
+        <p>&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9723;&#9723;&#9723;&#9723;</p><br>
+        <p>Figma</p>
+        <p>&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9723;&#9723;&#9723;</p><br>
+        <p>Adobe Photoshop</p>
+        <p>&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9723;&#9723;&#9723;&#9723;</p><br>
+        <p>Adobe Illustrator</p>
+        <p>&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9723;&#9723;&#9723;</p><br>
+      </div>
+      <button class="btn__curriculum" onclick="openProjectInfo(languagesText)">Languages</button>
+      <div id="languagesText" class="guardar__conteudo">
+        <p>Portuguese</p>
+        <p>&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;</p><br>
+        <p>English</p>
+        <p>&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9724;&#9723;&#9723;&#9723;</p><br>
+        <p>French</p>
+        <p>&#9724;&#9724;&#9724;&#9724;&#9724;&#9723;&#9723;&#9723;&#9723;&#9723;</p></progress>
+      </div>
+    </main>
+    <button id="back__top" onclick="back__top()">Return to the top of the page</button>
+    <script src="curriculum.js"></script>
+    <script src="backtop.js"></script>
+  </body>
+  <footer>
+    <svg height="2" width="100%">
+      <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#333333;stroke-width:7" />
+    </svg>
+    <div class="mensagem">
+      <p>This website is hosted on GitHub Pages.
+      By visiting this page be aware that, according to GitHub,<em>"visitor's IP address is logged and stored for security purposes"</em>.
+      <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection" target="_blank">
+        Click here to read more about it
+      </a>.</p>
+    </div>    
+  </footer>
+</html>
