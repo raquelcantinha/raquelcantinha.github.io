@@ -197,6 +197,7 @@ footer {
     height: fit-content;
     grid-column: span 2;
     background-color: #fff;
+    margin-top: 3rem;
 }
 
 .mensagem {
